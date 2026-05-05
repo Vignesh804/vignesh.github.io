@@ -8,11 +8,14 @@ export default defineConfig(({ mode }) => {
 
   return {
     plugins: [react()],
+    base: "./",   // 🔥🔥🔥 THIS LINE ADD PANNU
+
     resolve: {
       alias: {
         "@": path.resolve(__dirname, "./src"),
       },
     },
+
     server: {
       port: 5173,
       proxy: {
